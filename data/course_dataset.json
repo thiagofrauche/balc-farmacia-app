@@ -1,16 +1,344 @@
 {
   "course": {
     "title": "Balconista de Farmácia Profissional – Do Zero ao Avançado",
+    "palette": {
+      "primary": "#1E88E5",
+      "success": "#2ECC71",
+      "bg": "#FFFFFF",
+      "text": "#1F2937",
+      "muted": "#E5E7EB",
+      "danger": "#E53935"
+    },
+    "font": "Inter",
     "modules": [
       {
         "id": 1,
-        "title": "Exemplo (substitua depois pelo seu JSON)",
+        "title": "Módulo 1 — Fundamentos do Atendimento em Farmácia",
         "topics": [
           {
-            "title": "Bem-vindo",
-            "content": "Troque este arquivo pelo course_dataset.json completo.",
+            "title": "Postura, ética, privacidade e acolhimento",
+            "content": "Papel do balconista, ética profissional, LGPD, escuta ativa, linguagem simples, quando acionar o farmacêutico.",
             "questions": [
-              { "prompt": "Exemplo?", "options": ["A","B","C","D"], "correctIndex": 1 }
+              { "prompt": "Melhor forma de iniciar um atendimento?", "options": ["Perguntar preço direto", "Cumprimentar, apresentar-se e oferecer ajuda", "Ignorar e esperar o cliente falar", "Pedir CPF de início"], "correctIndex": 1, "explanation": "Acolhimento inicial cria confiança e reduz ruído." },
+              { "prompt": "Cliente relata sinais graves. O que fazer?", "options": ["Sugerir qualquer MIP", "Indicar retorno outro dia", "Acionar o farmacêutico responsável", "Vender o mais caro"], "correctIndex": 2, "explanation": "Gravidade requer avaliação técnica." },
+              { "prompt": "Informação essencial ao registrar uma orientação:", "options": ["Altura do cliente", "Sintomas e duração", "Cor favorita", "Profissão"], "correctIndex": 1, "explanation": "Sintomas + tempo guiando a triagem." },
+              { "prompt": "Sobre privacidade no balcão:", "options": ["Falar alto dados pessoais", "Privacidade não se aplica", "Usar tom discreto e proteger dados", "Proibir fotos de qualquer receita sem exceção"], "correctIndex": 2, "explanation": "Proteja dados e seja discreto." },
+              { "prompt": "Fila cheia. Boa prática:", "options": ["Acelerar sem explicar", "Organizar senha e comunicar tempo de espera", "Atender só habituais", "Interromper bruscamente atendimentos longos"], "correctIndex": 1, "explanation": "Transparência reduz frustração." },
+              { "prompt": "Uso de linguagem técnica:", "options": ["Sempre", "Nunca", "Quando necessário, traduzindo em linguagem simples", "Apenas com jovens"], "correctIndex": 2, "explanation": "Traduza termos para garantir compreensão." },
+              { "prompt": "Comportamento inadequado:", "options": ["Empatia", "Escuta ativa", "Deboche do cliente", "Confirmação de entendimento"], "correctIndex": 2, "explanation": "Respeito é essencial." },
+              { "prompt": "Encaminhamento ao farmacêutico:", "options": ["Compra de cotonetes", "Hidratante facial", "Uso de antibiótico", "Sabonete"], "correctIndex": 2, "explanation": "Antibiótico exige receita e avaliação." },
+              { "prompt": "Registro correto no sistema ajuda a:", "options": ["Elevar preços", "Facilitar controle e segurança", "Evitar auditorias", "Apagar histórico"], "correctIndex": 1, "explanation": "Rastreabilidade e segurança do paciente." },
+              { "prompt": "Em divergências com o cliente, a postura é:", "options": ["Aumentar o tom", "Chamar segurança", "Manter a calma e buscar solução", "Ignorar"], "correctIndex": 2, "explanation": "Calma preserva o vínculo e o ambiente." }
+            ]
+          },
+          {
+            "title": "Comunicação eficaz e checagem de entendimento",
+            "content": "Linguagem acessível, método teach-back, organização da fila, comunicação clara de prazos e limites.",
+            "questions": [
+              { "prompt": "Teach-back é:", "options": ["Repetir preço", "Cliente repetir orientação com suas palavras", "Mandar a bula por WhatsApp", "Falar rápido"], "correctIndex": 1, "explanation": "Confirma que a orientação foi entendida." },
+              { "prompt": "Ao perceber confusão do cliente:", "options": ["Encerrar", "Repetir igual", "Usar exemplos e confirmar entendimento", "Entregar só a bula"], "correctIndex": 2, "explanation": "Adapte a linguagem." },
+              { "prompt": "Tom de voz ideal:", "options": ["Agressivo", "Alto", "Calmo e respeitoso", "Sussurrado sempre"], "correctIndex": 2, "explanation": "Profissionalismo e serenidade." },
+              { "prompt": "Gestos e postura corporal:", "options": ["Irrelevantes", "Comunicam respeito/atenção", "Valem só em vendas caras", "Nunca notados"], "correctIndex": 1, "explanation": "Fazem parte da comunicação." },
+              { "prompt": "Registro claro de orientação:", "options": ["Inútil", "Base para segurança e qualidade", "Só marketing", "Apenas auditoria"], "correctIndex": 1, "explanation": "Suporta revisões e melhorias." },
+              { "prompt": "Fila grande. O que fazer?", "options": ["Ignorar", "Informar tempo estimado e organizar", "Atender amigos primeiro", "Fechar o caixa"], "correctIndex": 1, "explanation": "Transparência e organização." },
+              { "prompt": "Privacidade ao falar nome/telefone:", "options": ["Falar alto", "Expor a receita", "Ser discreto", "Pedir que grite o CPF"], "correctIndex": 2, "explanation": "Proteja dados pessoais." },
+              { "prompt": "Jargão técnico:", "options": ["Melhora venda", "Pode confundir, use com explicações simples", "É obrigatório", "Sempre deve ser usado"], "correctIndex": 1, "explanation": "Clareza acima de tudo." },
+              { "prompt": "Confirmação de dados do item:", "options": ["Opcional", "Evita erro de dispensação", "Proíbe venda", "Só para controlados"], "correctIndex": 1, "explanation": "Checagem final reduz erros." },
+              { "prompt": "Empatia prática significa:", "options": ["Concordar com tudo", "Se colocar no lugar do cliente e orientar com respeito", "Dar sermão", "Impor opinião"], "correctIndex": 1, "explanation": "Foco na experiência do cliente." }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": 2,
+        "title": "Módulo 2 — MIPs (Medicamentos Isentos de Prescrição)",
+        "topics": [
+          {
+            "title": "Identificação, indicação segura e limites de atuação",
+            "content": "MIPs comuns (analgésicos, antitérmicos, antiácidos, antifúngicos tópicos). Critérios de uso e sinais de alarme.",
+            "questions": [
+              { "prompt": "Exemplo de MIP:", "options": ["Amoxicilina", "Omeprazol (algumas apresentações OTC)", "Clonazepam", "Insulina"], "correctIndex": 1, "explanation": "Algumas apresentações são OTC segundo ANVISA." },
+              { "prompt": "Sinal de alarme:", "options": ["Febre há 1 hora", "Febre > 3 dias ou > 39°C", "Dor de cabeça leve", "Espirro isolado"], "correctIndex": 1, "explanation": "Persistência/gravidade pede avaliação." },
+              { "prompt": "Antiácidos: cuidado em", "options": ["Gestantes", "Insuficiência renal sem orientação", "Adultos saudáveis", "Crianças > 12 anos"], "correctIndex": 1, "explanation": "Alguns sais elevam alumínio/magnésio." },
+              { "prompt": "Dor leve:", "options": ["Opioide", "Corticosteroide", "Analgésico simples conforme bula", "Antibiótico"], "correctIndex": 2, "explanation": "Escolha segura e orientada por bula." },
+              { "prompt": "Suspeita de gravidez:", "options": ["Sugerir anti-inflamatório", "Recomendar teste e avaliação profissional", "Negar atendimento", "Vender antibiótico"], "correctIndex": 1, "explanation": "Segurança materno-fetal." },
+              { "prompt": "IBP prolongado pode:", "options": ["Ser isento de riscos", "Causar deficiência de B12, magnésio etc.", "Curar gastrite definitivamente", "Dispensa acompanhamento"], "correctIndex": 1, "explanation": "Uso crônico requer avaliação." },
+              { "prompt": "Constipação ocasional:", "options": ["Laxante forte diário", "Hidratação + fibras; MIP suave se preciso", "Antibiótico", "Diurético"], "correctIndex": 1, "explanation": "Medidas não farmacológicas primeiro." },
+              { "prompt": "AINEs sem orientação em:", "options": ["Úlcera/DRGE, anticoagulantes, idosos", "Adulto jovem saudável (1 dia)", "Sempre liberado", "Nunca há risco"], "correctIndex": 0, "explanation": "Maior risco GI/renal/hemorrágico." },
+              { "prompt": "Antibiótico sem receita:", "options": ["Vender", "Oferecer similar", "Explicar regra e encaminhar", "Dose baixa está ok"], "correctIndex": 2, "explanation": "Venda é regulamentada." },
+              { "prompt": "MIPs exigem:", "options": ["Nada", "Apenas preço", "Orientação adequada e, quando cabível, registro", "Só nome do balconista"], "correctIndex": 2, "explanation": "Rastreabilidade e orientação segura." }
+            ]
+          },
+          {
+            "title": "Autocuidado responsável e triagem",
+            "content": "Uso correto do rótulo/bula, tempo de uso, quando interromper e encaminhar; educação em saúde.",
+            "questions": [
+              { "prompt": "Tempo máximo para muitos MIPs sem melhora:", "options": ["12h", "24h", "48–72h", "2 semanas"], "correctIndex": 2, "explanation": "Sem melhora, suspender e avaliar." },
+              { "prompt": "Bula e rótulo servem para:", "options": ["Marketing", "Orientar dose/contraindicações/efeitos", "Somente lote/validade", "Nada"], "correctIndex": 1, "explanation": "Base de segurança." },
+              { "prompt": "Sintomas respiratórios com falta de ar:", "options": ["Vender AINE", "Encaminhar imediatamente", "Desconsiderar", "Vender anti-histamínico"], "correctIndex": 1, "explanation": "Prioridade é segurança clínica." },
+              { "prompt": "Dor abdominal + vômitos persistentes:", "options": ["Antiácido por 1 mês", "Encaminhar", "Probiótico", "Ignorar"], "correctIndex": 1, "explanation": "Pode indicar quadro grave." },
+              { "prompt": "Automedicação prolongada pode:", "options": ["Não ter risco", "Mascarar doença", "Ser obrigatória", "Resolver tudo"], "correctIndex": 1, "explanation": "Risco de atraso diagnóstico." },
+              { "prompt": "Uso de múltiplos produtos similares:", "options": ["Seguro", "Aumenta risco de overdose", "Indiferente", "Recomendado"], "correctIndex": 1, "explanation": "Cuidado com duplicidade de princípio ativo." },
+              { "prompt": "Queixa em criança < 2 anos:", "options": ["Tratar como adulto", "Evitar automedicação e encaminhar", "Aumentar dose", "Dar anti-inflamatório forte"], "correctIndex": 1, "explanation": "População mais sensível." },
+              { "prompt": "Cliente polimedicado idoso:", "options": ["Vender qualquer MIP", "Checar interações e encaminhar se dúvida", "Desconsiderar", "Trocar por genérico"], "correctIndex": 1, "explanation": "Cautela em polifarmácia." },
+              { "prompt": "Álcool + anti-histamínico sedativo:", "options": ["Seguro", "Potencializa sedação", "Indiferente", "Recomendado"], "correctIndex": 1, "explanation": "Risco de sonolência acentuada." },
+              { "prompt": "Mensagem-chave de autocuidado:", "options": ["Use quanto quiser", "Siga rótulo/bula e pare se piorar", "Nunca use MIPs", "Só marketing"], "correctIndex": 1, "explanation": "Uso responsável." }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": 3,
+        "title": "Módulo 3 — Interpretação de Receitas",
+        "topics": [
+          {
+            "title": "Elementos obrigatórios e conferências",
+            "content": "Identificação do prescritor, paciente, data, fármaco, dose, via, posologia, duração e assinatura. Conferir legibilidade e coerência.",
+            "questions": [
+              { "prompt": "Receita válida contém:", "options": ["Nome do remédio e preço", "Prescritor/paciente/data/posologia/assinatura", "Carimbo da farmácia", "Só assinatura"], "correctIndex": 1, "explanation": "Elementos mínimos legais." },
+              { "prompt": "Receita ilegível com risco:", "options": ["Vender assim", "Telefonar e confirmar", "Interpretar por conta", "Cliente decide"], "correctIndex": 1, "explanation": "Confirmação protege o paciente." },
+              { "prompt": "Sigla 'VO':", "options": ["Via oftálmica", "Via oral", "Uso tópico", "Via otológica"], "correctIndex": 1, "explanation": "VO = via oral." },
+              { "prompt": "'SC' significa:", "options": ["Subcutânea", "Sublingual", "Supositório", "Sinusal"], "correctIndex": 0, "explanation": "SC = subcutânea." },
+              { "prompt": "Quando recusar aviamento:", "options": ["Receita elegante", "Faltam dados essenciais", "Cliente novo", "Preço alto"], "correctIndex": 1, "explanation": "Risco legal e clínico." },
+              { "prompt": "Carimbo do prescritor inclui:", "options": ["CRM/CRF/COREN, nome e especialidade", "CPF do balconista", "Nome da farmácia", "Horário da loja"], "correctIndex": 0, "explanation": "Identificação obrigatória." },
+              { "prompt": "tid significa:", "options": ["2x/dia", "3x/dia", "4x/dia", "Ao deitar"], "correctIndex": 1, "explanation": "ter in die = 3 vezes/dia." },
+              { "prompt": "Validade média de antibiótico:", "options": ["2 dias", "5 dias", "10 dias", "30 dias"], "correctIndex": 2, "explanation": "Prática usual no Brasil." },
+              { "prompt": "Validade média de controlados:", "options": ["10 dias", "15 dias", "30 dias", "Sem prazo"], "correctIndex": 2, "explanation": "Regra prática: 30 dias (ver legislação local)." },
+              { "prompt": "Dose incompatível com apresentação:", "options": ["Vender", "Ajustar sozinho", "Confirmar com prescritor", "Rasurar"], "correctIndex": 2, "explanation": "Evita erro de dose/forma." }
+            ]
+          },
+          {
+            "title": "Abreviações e casos práticos",
+            "content": "Exemplos de abreviações comuns (qid, bid, tid, q6h, hs, SL). Conferência de posologia e via; quando solicitar nova via da receita.",
+            "questions": [
+              { "prompt": "bid significa:", "options": ["1x/dia", "2x/dia", "3x/dia", "4x/dia"], "correctIndex": 1, "explanation": "bis in die." },
+              { "prompt": "qid significa:", "options": ["4x/dia", "3x/dia", "2x/dia", "1x/dia"], "correctIndex": 0, "explanation": "quater in die." },
+              { "prompt": "hs significa:", "options": ["Ao acordar", "Ao deitar", "A cada 6 horas", "Antes das refeições"], "correctIndex": 1, "explanation": "hora somni." },
+              { "prompt": "SL significa:", "options": ["Solução", "Sublingual", "Subcutânea", "Supositório"], "correctIndex": 1, "explanation": "Via sublingual." },
+              { "prompt": "q6h equivale a:", "options": ["1x/dia", "2x/dia", "3x/dia", "4x/dia"], "correctIndex": 3, "explanation": "De 6 em 6 horas = 4 vezes/dia." },
+              { "prompt": "Receita com rasura:", "options": ["Aceitar", "Solicitar nova via/confirmar", "Ignorar", "Consertar a caneta"], "correctIndex": 1, "explanation": "Integridade do documento." },
+              { "prompt": "Uso off-label na receita:", "options": ["Dispensa avaliação", "Confirmar indicação/legislação", "É proibido sempre", "Liberado como MIP"], "correctIndex": 1, "explanation": "Avaliação técnica e legal." },
+              { "prompt": "Dois itens na receita, um ilegível:", "options": ["Ignorar", "Confirmar com o prescritor", "Cliente escolhe", "Vender o caro"], "correctIndex": 1, "explanation": "Reduz risco de erro." },
+              { "prompt": "Carimbo incompleto:", "options": ["Aviamento normal", "Recusar e solicitar correção", "Vender parcialmente", "Assinar por conta"], "correctIndex": 1, "explanation": "Cumprir requisitos legais." },
+              { "prompt": "Dúvida sobre abreviação rara:", "options": ["Assumir significado", "Consultar prescritor", "Buscar em redes sociais", "Ignorar"], "correctIndex": 1, "explanation": "Confirmar é essencial." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Módulo 4 — Posologia na Prática (4/4h, 6/6h, 8/8h, 12/12h, 24/24h)",
+        "topics": [
+          {
+            "title": "Cálculo de horários e somatória de comprimidos/doses",
+            "content": "q4h=6/dia; q6h=4/dia; q8h=3/dia; q12h=2/dia; q24h=1/dia. Sempre multiplicar doses por dias e por comprimidos por dose.",
+            "questions": [
+              { "prompt": "1 comp q6h por 5 dias: total?", "options": ["15", "18", "20", "30"], "correctIndex": 2, "explanation": "4/dia × 5 = 20." },
+              { "prompt": "1 comp q8h por 7 dias: total?", "options": ["14", "21", "28", "35"], "correctIndex": 1, "explanation": "3/dia × 7 = 21." },
+              { "prompt": "2 comp q12h por 10 dias: total?", "options": ["20", "30", "40", "50"], "correctIndex": 2, "explanation": "2 doses/dia × 2 comp = 4/dia; 4×10=40." },
+              { "prompt": "1 comp q4h por 3 dias: total?", "options": ["12", "18", "24", "36"], "correctIndex": 1, "explanation": "6/dia × 3 = 18." },
+              { "prompt": "1 comp q24h por 14 dias: total?", "options": ["7", "14", "21", "28"], "correctIndex": 1, "explanation": "1×14=14." },
+              { "prompt": "2 comp q8h por 5 dias: total?", "options": ["20", "24", "30", "40"], "correctIndex": 2, "explanation": "3 doses/dia × 2 = 6/dia; 6×5=30." },
+              { "prompt": "1 comp q12h por 7 dias: total?", "options": ["7", "10", "12", "14"], "correctIndex": 3, "explanation": "2×7=14." },
+              { "prompt": "3 comp q8h por 3 dias: total?", "options": ["18", "24", "27", "36"], "correctIndex": 2, "explanation": "3 doses × 3 comp = 9/dia; 9×3=27." },
+              { "prompt": "Xarope 10 mL q6h por 4 dias: doses?", "options": ["12", "14", "16", "24"], "correctIndex": 2, "explanation": "4/dia × 4 = 16 doses." },
+              { "prompt": "1 cáps q4h por 2 dias: total?", "options": ["8", "10", "12", "16"], "correctIndex": 2, "explanation": "6/dia × 2 = 12." }
+            ]
+          },
+          {
+            "title": "Erros comuns de posologia",
+            "content": "Confundir qid (4×/dia) com q6h; esquecer de multiplicar por dias; não considerar comprimidos por dose.",
+            "questions": [
+              { "prompt": "Erro comum:", "options": ["Multiplicar por dias", "Confundir qid com q6h (equivalentes, mas anotações geram confusão)", "Conferir via de administração", "Checar duração"], "correctIndex": 1, "explanation": "Anotações distintas; reforçar entendimento." },
+              { "prompt": "Para 2 comp qid por 7 dias:", "options": ["14", "28", "56", "21"], "correctIndex": 2, "explanation": "4 doses/dia ×2=8/dia; 8×7=56." },
+              { "prompt": "Se duração faltar:", "options": ["Assumir 3 dias", "Vender 30", "Confirmar com prescritor", "Ignorar"], "correctIndex": 2, "explanation": "Evita erro de tratamento." },
+              { "prompt": "q8h equivale a:", "options": ["1×/dia", "2×/dia", "3×/dia", "4×/dia"], "correctIndex": 2, "explanation": "A cada 8 horas = 3 vezes ao dia." },
+              { "prompt": "Dose pediátrica:", "options": ["Igual adulto", "Evitar cálculos sem orientação", "Dobrar", "Triplicar"], "correctIndex": 1, "explanation": "Exige avaliação profissional." },
+              { "prompt": "Multiplicar por comprimidos por dose é:", "options": ["Dispensável", "Essencial", "Proibido", "Apenas para antibiótico"], "correctIndex": 1, "explanation": "Parte do cálculo total." },
+              { "prompt": "q12h por 15 dias (1 comp):", "options": ["15", "20", "30", "45"], "correctIndex": 2, "explanation": "2/dia ×15=30." },
+              { "prompt": "2 comp q24h por 10 dias:", "options": ["10", "15", "20", "30"], "correctIndex": 2, "explanation": "2/dia ×10=20." },
+              { "prompt": "3 comp q6h por 2 dias:", "options": ["12", "18", "24", "36"], "correctIndex": 2, "explanation": "4 doses ×3=12/dia; 12×2=24." },
+              { "prompt": "1 comp q8h por 10 dias:", "options": ["20", "25", "30", "40"], "correctIndex": 2, "explanation": "3×10=30." }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": 5,
+        "title": "Módulo 5 — Armazenamento, PVPS e Organização",
+        "topics": [
+          {
+            "title": "PVPS e cadeia fria",
+            "content": "Primeiro que vence, primeiro que sai; controle de temperatura/umidade; termolábeis; registro e auditorias.",
+            "questions": [
+              { "prompt": "PVPS significa:", "options": ["Último que vence, primeiro que sai", "Primeiro que vence, primeiro que sai", "Preço variável por setor", "Posologia variável"], "correctIndex": 1, "explanation": "Evita perdas e aumenta segurança." },
+              { "prompt": "Termolábeis ficam:", "options": ["Prateleira alta", "Janela", "Refrigerados conforme indicação", "Balcão"], "correctIndex": 2, "explanation": "Respeitar cadeia fria." },
+              { "prompt": "Conferência de validade:", "options": ["Semestral", "Só quando fiscalizar", "Contínua e registrada", "Nunca"], "correctIndex": 2, "explanation": "Rotina + registro." },
+              { "prompt": "Fracionáveis devem ter:", "options": ["Qualquer embalagem", "Rótulo com lote/validade", "Sem identificação", "Saco comum"], "correctIndex": 1, "explanation": "Rastreabilidade." },
+              { "prompt": "Controlados ficam:", "options": ["Acesso livre", "Gôndola da frente", "Local restrito e monitorado", "Caixa"], "correctIndex": 2, "explanation": "Exigência legal." },
+              { "prompt": "Higienização do estoque:", "options": ["Nunca precisa", "Somente no fim do ano", "Rotineira", "Apenas após inspeção"], "correctIndex": 2, "explanation": "Boas práticas." },
+              { "prompt": "Medicamentos vencidos:", "options": ["Podem ser vendidos com desconto", "Descartar conforme norma", "Podem ser doados", "Usar por 30 dias a mais"], "correctIndex": 1, "explanation": "Descarte adequado." },
+              { "prompt": "Registro de temperatura:", "options": ["Opcional", "Obrigatório e auditável", "Só no verão", "Só para cosméticos"], "correctIndex": 1, "explanation": "Garante qualidade." },
+              { "prompt": "Após abrir frascos multiuso:", "options": ["Sem prazo", "Seguir prazo pós-abertura da bula", "Descartar em 3 dias sempre", "Completar com água"], "correctIndex": 1, "explanation": "Estabilidade definida em bula." },
+              { "prompt": "Organização recomendada:", "options": ["Misturar todas apresentações", "Separar por classe/forma e rotular", "Sem etiquetas", "Guardar onde couber"], "correctIndex": 1, "explanation": "Facilita conferência e reposição." }
+            ]
+          },
+          {
+            "title": "Endereçamento e inventário",
+            "content": "Endereços de prateleira, leitura de código de barras, inventários rotativos e acurácia de estoque.",
+            "questions": [
+              { "prompt": "Endereçamento serve para:", "options": ["Marketing", "Encontrar itens com rapidez e precisão", "Aumentar preço", "Somente estética"], "correctIndex": 1, "explanation": "Eficiência operacional." },
+              { "prompt": "Inventário rotativo:", "options": ["Nunca recomendado", "Verificação periódica por amostras", "Uma vez por década", "Só após auditoria"], "correctIndex": 1, "explanation": "Mantém acurácia do estoque." },
+              { "prompt": "Código de barras ajuda:", "options": ["Nada", "Rastreabilidade e redução de erros", "Somente fiscal", "Só no caixa"], "correctIndex": 1, "explanation": "Menos erros de picking." },
+              { "prompt": "Divergência de estoque:", "options": ["Ignorar", "Registrar e investigar", "Aumentar venda do item", "Apagar do sistema"], "correctIndex": 1, "explanation": "Rastrear causa e corrigir." },
+              { "prompt": "Etiquetas claras:", "options": ["Desnecessárias", "Melhoram localização e conferência", "Confundem", "Só para cosméticos"], "correctIndex": 1, "explanation": "Ganha tempo no atendimento." },
+              { "prompt": "Zona de quarentena:", "options": ["Itens promocionais", "Produtos duvidosos/avariados", "Amostras grátis", "Descartes gerais"], "correctIndex": 1, "explanation": "Evita venda indevida." },
+              { "prompt": "PEPS/PVPS aplica-se a:", "options": ["Somente alimentos", "Somente dermocosméticos", "Medicamentos e correlatos", "Apenas controlados"], "correctIndex": 2, "explanation": "Regra geral de validade." },
+              { "prompt": "Acurácia de estoque impacta:", "options": ["Somente contabilidade", "Ruptura e atendimento ao cliente", "Apenas TI", "Nada"], "correctIndex": 1, "explanation": "Menos falta e retrabalho." },
+              { "prompt": "Endereço físico x sistema:", "options": ["Podem divergir sem problema", "Devem estar alinhados", "Tanto faz", "Só importa na matriz"], "correctIndex": 1, "explanation": "Coerência evita erros." },
+              { "prompt": "Produto sem etiqueta/lote:", "options": ["Vender mesmo assim", "Segregar e investigar", "Etiquetar fictício", "Ignorar"], "correctIndex": 1, "explanation": "Segurança e rastreio." }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": 6,
+        "title": "Módulo 6 — Documentos, Notas e Obrigações Legais",
+        "topics": [
+          {
+            "title": "Receitas, guarda e legislação prática",
+            "content": "Receitas de antibióticos (validade média 10 dias) e controlados (30 dias); guarda e conferência documental.",
+            "questions": [
+              { "prompt": "Validade média de antibiótico:", "options": ["2 dias", "5 dias", "10 dias", "30 dias"], "correctIndex": 2, "explanation": "Prática usual no Brasil." },
+              { "prompt": "Controlados costumam valer:", "options": ["10 dias", "15 dias", "30 dias", "Sem prazo"], "correctIndex": 2, "explanation": "Regra prática comum." },
+              { "prompt": "Guarda de receitas deve ser:", "options": ["Apenas digital", "Conforme legislação e POPs", "Opcional", "Sem prazo"], "correctIndex": 1, "explanation": "Atende fiscalização." },
+              { "prompt": "Receita rasurada/ilegível:", "options": ["Aceitar", "Solicitar nova/confirmar", "Interpretar", "Vender parcialmente"], "correctIndex": 1, "explanation": "Integridade do documento." },
+              { "prompt": "SNGPC relaciona-se com:", "options": ["Cosméticos", "Controlados", "Vitaminas", "Bebidas"], "correctIndex": 1, "explanation": "Gerenciamento nacional." },
+              { "prompt": "Armazenar documentos em:", "options": ["Local úmido", "Local seguro e organizado", "Porta da geladeira", "Saco comum"], "correctIndex": 1, "explanation": "Preservação e acesso." },
+              { "prompt": "Em auditoria, a falta de registro:", "options": ["Não importa", "Pode gerar autuação", "É positivo", "Reduz riscos"], "correctIndex": 1, "explanation": "Conformidade documental é chave." },
+              { "prompt": "Dados pessoais dos clientes:", "options": ["Podem ser expostos", "Devem ser protegidos (LGPD)", "Devem ser divulgados ao marketing sem consentimento", "Podem ser vendidos"], "correctIndex": 1, "explanation": "Privacidade é obrigatória." },
+              { "prompt": "Em dúvida legal:", "options": ["Decidir sozinho", "Consultar farmacêutico/normas", "Ignorar", "Perguntar ao cliente"], "correctIndex": 1, "explanation": "Conformidade primeiro." },
+              { "prompt": "Venda fracionada:", "options": ["Proibida sempre", "Permitida conforme normas, com rotulagem", "Livre, sem regra", "Só para antibióticos"], "correctIndex": 1, "explanation": "Rotulagem e registro obrigatórios." }
+            ]
+          },
+          {
+            "title": "Notas fiscais e acerto de estoque",
+            "content": "Conferência de NF, entradas/saídas, correção de divergências e impacto no inventário e no SNGPC.",
+            "questions": [
+              { "prompt": "Nota fiscal impacta:", "options": ["Nada", "Entradas/saídas de produtos", "Somente impressora", "Apenas preço"], "correctIndex": 1, "explanation": "Base do estoque." },
+              { "prompt": "Divergência de NF:", "options": ["Ignorar", "Registrar e corrigir", "Aumentar estoque do item", "Apagar do sistema"], "correctIndex": 1, "explanation": "Ajuste e rastreio." },
+              { "prompt": "Lotes e validade na entrada:", "options": ["Indiferentes", "Devem ser registrados corretamente", "Só para dermo", "Só controlados"], "correctIndex": 1, "explanation": "Rastreabilidade." },
+              { "prompt": "Devolução ao fornecedor:", "options": ["Nunca", "Seguir fluxo e notas de devolução", "Jogar fora", "Vender com desconto"], "correctIndex": 1, "explanation": "Processo formal." },
+              { "prompt": "Perdas/avarias:", "options": ["Esconder", "Lançar como quebra", "Vender rápido", "Doar"], "correctIndex": 1, "explanation": "Transparência de estoque." },
+              { "prompt": "Sobra em inventário físico:", "options": ["Recontar e ajustar com justificativa", "Ignorar", "Zerar", "Doar"], "correctIndex": 0, "explanation": "Ajuste responsável." },
+              { "prompt": "Falta recorrente de item:", "options": ["Normal", "Rever previsão/fornecimento", "Ignorar", "Vender outro sem critério"], "correctIndex": 1, "explanation": "Planejamento de compras." },
+              { "prompt": "Preço de venda:", "options": ["Não depende de imposto", "Pode depender de tributos/região", "É igual no Brasil todo", "Só depende do fornecedor"], "correctIndex": 1, "explanation": "Contexto tributário/regional." },
+              { "prompt": "Responsável técnico (RT):", "options": ["Figura decorativa", "Responde por processos técnicos", "Não existe", "É o caixa"], "correctIndex": 1, "explanation": "Pilar de conformidade." },
+              { "prompt": "Arquivamento de NFs:", "options": ["Desnecessário", "Organizado e com backup", "Só impresso", "Qualquer forma"], "correctIndex": 1, "explanation": "Evita perda de informação." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Módulo 7 — Interações, Contraindicações e Farmacovigilância",
+        "topics": [
+          {
+            "title": "Interações e populações especiais",
+            "content": "Risco/benefício; AINE + anticoagulante; fotosensibilidade; gestantes/idosos; quando não vender e encaminhar.",
+            "questions": [
+              { "prompt": "Combinação de risco:", "options": ["Vitamina C + água", "AINE + anticoagulante", "Hidratante + sabonete", "Soro + gaze"], "correctIndex": 1, "explanation": "Aumenta risco hemorrágico." },
+              { "prompt": "Reação adversa grave:", "options": ["Sonolência leve", "Urticária com dispneia", "Sede", "Coceira leve"], "correctIndex": 1, "explanation": "Pode ser anafilaxia." },
+              { "prompt": "Farmacovigilância é:", "options": ["Promoção", "Notificar eventos adversos", "Design de embalagem", "Gerar receitas"], "correctIndex": 1, "explanation": "Segurança coletiva." },
+              { "prompt": "MIPs em gestantes:", "options": ["Tudo liberado", "Evitar e orientar avaliação", "Vender qualquer analgésico", "Priorizar AINE"], "correctIndex": 1, "explanation": "Segurança materno-fetal." },
+              { "prompt": "AINEs em idosos:", "options": ["Sem risco", "Podem elevar risco GI/renal", "Sempre indicados", "Devem ser combinados a anticoagulantes"], "correctIndex": 1, "explanation": "Maior suscetibilidade." },
+              { "prompt": "Má adesão a antibiótico:", "options": ["Melhora eficácia", "Favorece resistência", "Indiferente", "Recomendada"], "correctIndex": 1, "explanation": "Resistência bacteriana." },
+              { "prompt": "Fotosensibilidade:", "options": ["Hidratante", "Isotretinoína/alguns antibióticos", "Vitamina D", "Protetor solar"], "correctIndex": 1, "explanation": "Evitar sol excessivo." },
+              { "prompt": "Quando não vender:", "options": ["Cólica leve", "Corte superficial limpo", "Sintomas neurológicos agudos", "Dor leve pós treino"], "correctIndex": 2, "explanation": "Encaminhar a serviço de saúde." },
+              { "prompt": "Interação alimento-medicamento:", "options": ["Nunca existe", "Pode alterar absorção", "Só melhora eficácia", "Só com antibióticos"], "correctIndex": 1, "explanation": "Alguns exigem jejum; outros, com alimento." },
+              { "prompt": "Notificação de eventos adversos:", "options": ["Desnecessária", "Ajuda a segurança do paciente", "Proibida", "Cabe só ao cliente"], "correctIndex": 1, "explanation": "Base da farmacovigilância." }
+            ]
+          },
+          {
+            "title": "Quando interromper e encaminhar",
+            "content": "Critérios de gravidade, sinais de alarme, duração sem melhora e populações de risco.",
+            "questions": [
+              { "prompt": "Febre > 39°C por 3 dias:", "options": ["Manter MIP", "Encaminhar", "Aumentar dose", "Dar antibiótico"], "correctIndex": 1, "explanation": "Avaliação médica." },
+              { "prompt": "Dor no peito + falta de ar:", "options": ["Vender ansiolítico", "Encaminhar imediatamente", "Antiácido", "Analgésico"], "correctIndex": 1, "explanation": "Pode ser emergência." },
+              { "prompt": "Sangramento GI em uso de AINE:", "options": ["Manter uso", "Suspender e procurar avaliação", "Ignorar", "Tomar com leite"], "correctIndex": 1, "explanation": "Risco de complicação." },
+              { "prompt": "Erupção cutânea extensa após novo medicamento:", "options": ["Aplicar bronzeador", "Interromper e buscar avaliação", "Prosseguir", "Tomar sol"], "correctIndex": 1, "explanation": "Pode ser reação grave." },
+              { "prompt": "Idoso polimedicado com tontura nova:", "options": ["Vender anti-histamínico sedativo", "Revisar interações e encaminhar", "Aumentar diurético", "Nada a fazer"], "correctIndex": 1, "explanation": "Cautela e revisão terapêutica." },
+              { "prompt": "Gestante com vômitos persistentes:", "options": ["AINE forte", "Encaminhar", "Chá apenas", "Antibiótico"], "correctIndex": 1, "explanation": "Risco de desidratação." },
+              { "prompt": "Criança < 2 anos febril:", "options": ["Tratar como adulto", "Evitar automedicação e encaminhar", "Dar AAS", "Dose dobrada"], "correctIndex": 1, "explanation": "População sensível." },
+              { "prompt": "Erros de dose suspeitos:", "options": ["Prosseguir", "Confirmar com prescritor", "Ignorar", "Vender metade"], "correctIndex": 1, "explanation": "Segurança do paciente." },
+              { "prompt": "Interação grave identificada:", "options": ["Vender mesmo assim", "Orientar e encaminhar para avaliação", "Omitir", "Trocar por outro sem critério"], "correctIndex": 1, "explanation": "Gestão de risco." },
+              { "prompt": "Evento adverso relatado:", "options": ["Não anotar", "Registrar e, quando cabível, notificar", "Ignorar", "Vender outro remédio"], "correctIndex": 1, "explanation": "Rastreio e vigilância." }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": 8,
+        "title": "Módulo 8 — Vendas Responsáveis e Experiência do Cliente",
+        "topics": [
+          {
+            "title": "Layout, acessibilidade e omnichannel (WhatsApp/Instagram)",
+            "content": "Sinalização clara, gôndolas acessíveis, integração com canais digitais com respeito à privacidade e consentimento.",
+            "questions": [
+              { "prompt": "Upsell ético é:", "options": ["Forçar compra", "Sugerir itens úteis e relacionados", "Oferecer apenas caros", "Esconder preços"], "correctIndex": 1, "explanation": "Valor real para o cliente." },
+              { "prompt": "Experiência positiva envolve:", "options": ["Desorganização", "Fila sem previsão", "Acolhimento e clareza", "Preços ocultos"], "correctIndex": 2, "explanation": "Transparência fideliza." },
+              { "prompt": "Privacidade em canais digitais:", "options": ["Enviar dados sem consentimento", "Respeitar LGPD e consentimento", "Compartilhar publicamente", "Guardar print no celular pessoal"], "correctIndex": 1, "explanation": "Dados pessoais exigem cuidado." },
+              { "prompt": "Em ruptura de estoque:", "options": ["Ignorar", "Sugerir alternativas equivalentes corretas", "Vender qualquer coisa", "Dizer que acabou"], "correctIndex": 1, "explanation": "Solução mantém confiança." },
+              { "prompt": "Atendimento por WhatsApp:", "options": ["Expor dados", "Responder sem registro", "Seguir boas práticas de privacidade", "Enviar áudios longos sem consentimento"], "correctIndex": 2, "explanation": "Privacidade e clareza." },
+              { "prompt": "Satisfação melhora com:", "options": ["Tempo imprevisível", "Sinalização legível e equipe treinada", "Falta de preços", "Ambiente confuso"], "correctIndex": 1, "explanation": "Organização ajuda." },
+              { "prompt": "Acessibilidade inclui:", "options": ["Gôndolas muito altas", "Corredores estreitos", "Circulação e sinalização legível", "Som alto"], "correctIndex": 2, "explanation": "Inclui PcD e idosos." },
+              { "prompt": "Reclamações devem ser:", "options": ["Ignoradas", "Usadas para melhoria", "Motivo para expulsar", "Judicializadas sempre"], "correctIndex": 1, "explanation": "Feedback é insumo de melhoria." },
+              { "prompt": "Trocas e devoluções:", "options": ["Nunca acontecem", "Seguir política clara e legal", "Proibidas", "Dependem do humor do atendente"], "correctIndex": 1, "explanation": "Transparência reduz conflitos." },
+              { "prompt": "Comunicação visual eficaz:", "options": ["Preços invisíveis", "Letra minúscula e baixa luz", "Placas claras e fontes legíveis", "Cores aleatórias sem padrão"], "correctIndex": 2, "explanation": "Facilita escolhas." }
+            ]
+          },
+          {
+            "title": "Fidelização responsável",
+            "content": "Cadastro consentido, ofertas relevantes, histórico de preferências com respeito à LGPD.",
+            "questions": [
+              { "prompt": "Cadastro de cliente deve:", "options": ["Coletar tudo sem consentimento", "Ter consentimento e finalidade clara", "Ser obrigatório a qualquer compra", "Ser compartilhado com terceiros"], "correctIndex": 1, "explanation": "Base legal na LGPD." },
+              { "prompt": "Oferta relevante é:", "options": ["Produto aleatório", "Relacionado à necessidade do cliente", "Sempre o mais caro", "O que sobrou no estoque"], "correctIndex": 1, "explanation": "Foco em utilidade." },
+              { "prompt": "Histórico de compras:", "options": ["Público", "Protegido e usado com parcimônia", "Compartilhado", "Sem importância"], "correctIndex": 1, "explanation": "Privacidade e segurança." },
+              { "prompt": "Comunicação de campanhas:", "options": ["Spam", "Segmentada e consentida", "Enviar a todos sempre", "Sem opção de descadastro"], "correctIndex": 1, "explanation": "Respeito ao cliente." },
+              { "prompt": "Programa de fidelidade:", "options": ["Sem regras", "Transparente e com benefícios claros", "Oculto", "Apenas promoções enganosas"], "correctIndex": 1, "explanation": "Confiança e retenção." },
+              { "prompt": "Atendimento pós-venda:", "options": ["Desnecessário", "Demonstra cuidado e gera retorno", "Atrasa fila", "Só para alto ticket"], "correctIndex": 1, "explanation": "Fideliza pela experiência." },
+              { "prompt": "Comunicação por Instagram:", "options": ["Promessas milagrosas", "Conteúdo educativo e responsável", "Polêmicas", "Sem base técnica"], "correctIndex": 1, "explanation": "Autoridade e confiança." },
+              { "prompt": "Coleta de feedback:", "options": ["Nunca", "Quando possível e com simples formulário", "Somente presencial", "Só reclamações"], "correctIndex": 1, "explanation": "Melhoria contínua." },
+              { "prompt": "Cross-sell correto:", "options": ["Qualquer item caro", "Itens complementares relevantes", "Nada a ver", "Proibido"], "correctIndex": 1, "explanation": "Agrega valor real." },
+              { "prompt": "Uso de dados para ofertas:", "options": ["Sem transparência", "Com transparência e opção de opt-out", "Sempre obrigatório", "Compartilhar com parceiros"], "correctIndex": 1, "explanation": "Respeito à escolha do cliente." }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": 9,
+        "title": "Módulo Bônus — Decifrando Receitas Difíceis",
+        "topics": [
+          {
+            "title": "Do legível ao quase ilegível: estratégias práticas",
+            "content": "Casos simulados; confirmar doses e DCB; checar posologia; telefonar ao consultório quando necessário.",
+            "questions": [
+              { "prompt": "“amx 500 mg 8/8h 7d” significa:", "options": ["Amoxicilina 500 mg 12/12h por 7 dias", "Amoxicilina 500 mg 8/8h por 7 dias", "Amoxicilina 250 mg 8/8h por 7 dias", "Azitromicina 500 mg 8/8h por 7 dias"], "correctIndex": 1, "explanation": "Abreviação comum." },
+              { "prompt": "“dip 1cp hs” indica:", "options": ["1 comp pela manhã", "1 comp ao deitar", "1 comp a cada 8h", "1 comp se dor"], "correctIndex": 1, "explanation": "hs = hora de dormir." },
+              { "prompt": "Um item está ilegível:", "options": ["Ignorar", "Confirmar com o prescritor", "Escolher o mais caro", "Cliente decide"], "correctIndex": 1, "explanation": "Reduz risco de erro." },
+              { "prompt": "“SL” indica via:", "options": ["Solução", "Sublingual", "Subcutânea", "Supositório"], "correctIndex": 1, "explanation": "Via sublingual." },
+              { "prompt": "Dose incompatível com idade:", "options": ["Vender", "Reduzir por conta", "Consultar farmacêutico e prescritor", "Trocar por similar"], "correctIndex": 2, "explanation": "Segurança pediátrica/geriátrica." },
+              { "prompt": "Papel danificado:", "options": ["Completar à caneta", "Solicitar nova via/confirmar", "Vender parcialmente", "Sem problema"], "correctIndex": 1, "explanation": "Integridade do documento." },
+              { "prompt": "“1 cp 6/6h 5d”: total de comprimidos:", "options": ["20", "24", "30", "12"], "correctIndex": 0, "explanation": "4/dia × 5 dias × 1 cp = 20." },
+              { "prompt": "Marca sem DCB (genérico):", "options": ["Trocar sem informar", "Buscar DCB e confirmar equivalência", "Negar venda", "Substituir por cosmético"], "correctIndex": 1, "explanation": "Transparência terapêutica." },
+              { "prompt": "Anotar lote/validade:", "options": ["Marketing", "Rastreabilidade", "Apenas auditoria interna", "Sem utilidade"], "correctIndex": 1, "explanation": "Permite recall rápido." },
+              { "prompt": "Caligrafia indecifrável:", "options": ["Assumir medicação comum", "Explicar e contatar o prescritor", "Vender se insistir", "Escolher pela cor da caixa"], "correctIndex": 1, "explanation": "Confirmação direta evita erro." }
             ]
           }
         ]
