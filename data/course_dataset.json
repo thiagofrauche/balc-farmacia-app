@@ -1,0 +1,20 @@
+{
+  "course": {
+    "title": "Balconista de Farmácia Profissional – Do Zero ao Avançado",
+    "modules": [
+      {
+        "id": 1,
+        "title": "Exemplo (substitua depois pelo seu JSON)",
+        "topics": [
+          {
+            "title": "Bem-vindo",
+            "content": "Troque este arquivo pelo course_dataset.json completo.",
+            "questions": [
+              { "prompt": "Exemplo?", "options": ["A","B","C","D"], "correctIndex": 1 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
