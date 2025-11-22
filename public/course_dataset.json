@@ -1,1 +1,139 @@
-
+{
+  "course": {
+    "title": "Curso Profissional de Balconista de Farmácia",
+    "palette": {
+      "primary": "#2563eb",
+      "success": "#16a34a",
+      "bg": "#f1f5f9",
+      "text": "#0f172a",
+      "muted": "#64748b",
+      "danger": "#dc2626"
+    },
+    "font": {
+      "title": "Merriweather",
+      "body": "Inter"
+    },
+    "modules": [
+      {
+        "id": 1,
+        "title": "Módulo 1 — Fundamentos do Atendimento Farmacêutico",
+        "topics": [
+          {
+            "title": "Postura, ética, privacidade e boas práticas no balcão",
+            "content": "Papel do balconista, ética e comportamento profissional.",
+            "questions": [
+              { "prompt": "Melhor forma de iniciar um atendimento acolhedor." },
+              { "prompt": "Cliente relata sinais de sofrimento. Como proceder de forma ética?" },
+              { "prompt": "Informação essencial que nunca pode faltar no atendimento inicial." },
+              { "prompt": "Sobre privacidade no balcão: práticas recomendadas." },
+              { "prompt": "Fila cheia. Boa prática para agilizar sem perder qualidade." },
+              { "prompt": "Uso de linguagem técnica: quando usar e quando evitar?" },
+              { "prompt": "Comportamento inadequado do cliente: como agir corretamente." },
+              { "prompt": "Encaminhamento ao farmacêutico: quando é obrigatório?" },
+              { "prompt": "Registro correto no sistema após o atendimento." },
+              { "prompt": "Em divergências com o cliente, como manter postura profissional?" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Módulo 2 — Medicamentos Tarja Preta, Vermelha, Genéricos e Similares",
+        "topics": [
+          {
+            "title": "Diferenças entre categorias de medicamentos",
+            "content": "Tarjas, retenção de receita, controle especial e normas da Anvisa.",
+            "questions": [
+              { "prompt": "Explique a diferença entre tarja vermelha e tarja preta." },
+              { "prompt": "Genérico x similar: como explicar ao cliente?" },
+              { "prompt": "Quando a farmácia precisa RECOLHER a receita?" },
+              { "prompt": "Documentos obrigatórios para medicamentos controlados." },
+              { "prompt": "Primeira coisa a verificar em uma receita de tarja preta." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Módulo 3 — Atendimento por Sintomas Comuns",
+        "topics": [
+          {
+            "title": "Protocolos de orientação por sinais e sintomas",
+            "content": "Como conduzir atendimentos sem ultrapassar limites legais.",
+            "questions": [
+              { "prompt": "Cliente com febre — quais perguntas fazer antes de sugerir algo?" },
+              { "prompt": "Dor abdominal: quando NÃO pode indicar OTC." },
+              { "prompt": "Criança com tosse: como proceder corretamente?" },
+              { "prompt": "Idoso com tontura: qual a orientação adequada?" },
+              { "prompt": "Sinais de alerta que exigem encaminhamento imediato." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Módulo 4 — Noções de Farmacologia para Balconistas",
+        "topics": [
+          {
+            "title": "Classes terapêuticas e efeitos comuns",
+            "content": "Anti-inflamatórios, analgésicos, antibióticos e mais.",
+            "questions": [
+              { "prompt": "Explique o que são AINEs e quando evitar sugerir." },
+              { "prompt": "Diferença entre analgésico e antipirético." },
+              { "prompt": "Por que balconista não pode indicar antibiótico?" },
+              { "prompt": "Riscos de anti-inflamatórios em hipertensos." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Módulo 5 — Produtos de Higiene, Dermocosméticos e Suplementos",
+        "topics": [
+          {
+            "title": "Explicação técnica simplificada de produtos",
+            "content": "Como orientar o cliente sem fazer promessas médicas.",
+            "questions": [
+              { "prompt": "Cliente busca produto para acne: abordagem correta." },
+              { "prompt": "Queda de cabelo: produtos comuns e o que evitar prometer." },
+              { "prompt": "Suplementos: como explicar uso seguro." },
+              { "prompt": "Diferença entre vitamina D manipulada e industrializada." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Módulo 6 — Vendas, Fidelização e Técnicas de Balcão",
+        "topics": [
+          {
+            "title": "Técnicas reais usadas por balconistas experientes",
+            "content": "Cross-sell, up-sell, fidelização e comunicação estratégica.",
+            "questions": [
+              { "prompt": "Como sugerir item complementar sem parecer venda forçada." },
+              { "prompt": "Frases que aumentam conversão no balcão." },
+              { "prompt": "Como lidar com objeções de preço." },
+              { "prompt": "Estratégia para fidelizar cliente novo." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Módulo 7 — Emergência, Primeiros Socorros e Condutas Rápidas",
+        "topics": [
+          {
+            "title": "Situações de risco e o papel do balconista",
+            "content": "O que fazer e o que não fazer em emergências.",
+            "questions": [
+              { "prompt": "Cliente desmaia na loja. Primeiro passo correto." },
+              { "prompt": "Crise alérgica grave: procedimento seguro para um balconista." },
+              { "prompt": "Pressão muito alta — quando não pode vender nada." },
+              { "prompt": "Sinais de AVC: o que observar no cliente." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
